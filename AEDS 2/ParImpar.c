@@ -8,9 +8,9 @@ int main() {
     }
     for (int i = 0; i < N; i++) {
         if (vet[i] % 2 == 0) {
-            printf("PAR");
+            printf("PAR\n");
         } else {
-            printf("IMPAR");
+            printf("IMPAR\n");
         }
     }
 
