@@ -1,3 +1,5 @@
+/*Criar um programa que lê um inteiro N e, em seguida, lê N inteiros.
+O programa deve imprimir, para cada um dos N inteiros lidos, se é PAR ou IMPAR.*/
 #include <stdio.h>
 int main() {
     int N;
