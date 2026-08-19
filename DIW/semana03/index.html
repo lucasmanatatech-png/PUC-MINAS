@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Currículo — Lucas Manata de Pinho</title>
+  <meta name="description" content="Currículo em HTML/CSS de Lucas Manata de Pinho" />
+
+  <!-- Fonte (substitua se preferir) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="portfolio.html">Portfólio</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <article class="cv-wrap" role="article" aria-label="Currículo">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar" aria-label="Informações pessoais">
+      <div class="photo" aria-hidden="true">
+        <img src="fotominha.jpg" alt="Foto de Lucas Manata" style="width:100%;height:100%;object-fit:cover;border-radius:10px;"/>
+      </div>
+      <div class="profile">
+        <div class="name">Lucas Manata de Pinho</div>
+        <div class="role">Desenvolvedor Front-End</div>
+      </div>
+
+      <div class="contact">
+        <h3>Contato</h3>
+        <p><strong>Email:</strong> <br><a href="email:lucas@email.com">lucasmanatatech@gmail.com</a></p>
+        <p><strong>Telefone:</strong> <br><a href="tel:+5531999999999">+55 (31) 97308-1419</a></p>
+        <p><strong>Localização:</strong> <br>Belo Horizonte, Brasil</p>
+
+        <div style="margin-top:10px">
+          <a class="muted" href="https://www.linkedin.com/in/lucasmanata/">LinkedIn</a>
+        </div>
+      </div>
+
+      <div class="section">
+        <h3>Competências</h3>
+        <div class="skill-list">
+          <span class="skill">HTML5</span>
+          <span class="skill">CSS3</span>
+          <span class="skill">JavaScript</span>
+          <span class="skill">React</span>
+          <span class="skill">Git/GitHub</span>
+        </div>
+      </div>
+
+      <div class="section">
+        <h3>Idiomas</h3>
+        <p class="muted">Português — Nativo</p>
+        <p class="muted">Inglês — Avançado</p>
+      </div>
+
+      <div class="section">
+        <h3>Interesses</h3>
+        <span class="tag">Cloud Computing</span>
+        <span class="tag">Cibersegurança</span>
+        <span class="tag">Tecnologia</span>
+      </div>
+
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main">
+      <header class="headline">
+        <div>
+          <h2 style="margin:0">Lucas Manata</h2>
+          <div class="muted">Desenvolvedor Front-End apaixonado por criar interfaces modernas e responsivas</div>
+        </div>
+        <div style="text-align:right">
+          <div class="muted">Disponível para trabalho remoto ou presencial</div>
+        </div>
+      </header>
+
+      <section class="summary item">
+        <h3>Resumo profissional</h3>
+        <p class="desc">Profissional com 2 anos de experiência em desenvolvimento front-end, atuando em projetos web responsivos e aplicações interativas. Focado em boas práticas, acessibilidade e performance.</p>
+      </section>
+
+      <section class="experience item">
+        <h3>Experiência</h3>
+
+        <div class="exp-row">
+          <div class="meta">
+            <div>
+              <h4>Agência Web — Desenvolvedor Front-End</h4>
+              <div class="muted">2022 — Presente</div>
+            </div>
+            <div class="muted">Belo Horizonte</div>
+          </div>
+          <p class="desc">Desenvolvimento de sites institucionais e e-commerces responsivos utilizando HTML, CSS, JavaScript e React. Implementação de boas práticas de SEO e acessibilidade.</p>
+        </div>
+
+        <div class="exp-row">
+          <div class="meta">
+            <div>
+              <h4>Freelancer — Web Developer</h4>
+              <div class="muted">2020 — 2022</div>
+            </div>
+            <div class="muted">Remoto</div>
+          </div>
+          <p class="desc">Criação de landing pages otimizadas para marketing digital, manutenção de sites e consultoria em usabilidade.</p>
+        </div>
+      </section>
+
+      <section class="item">
+        <h3>Educação</h3>
+        <div style="margin-top:8px">
+          <h4>PUC Minas — Ciência da Computação</h4>
+          <div class="muted">2019 — 2023</div>
+          <p class="desc">Projetos acadêmicos em desenvolvimento web e pesquisa em usabilidade de interfaces.</p>
+        </div>
+      </section>
+
+      <section class="item">
+        <h3>Projetos / Portfólio</h3>
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(180px,1fr)); gap:12px; margin-top:10px">
+          <div style="padding:10px; border-radius:8px; border:1px solid rgba(15,23,42,0.04)">
+            <strong>Portfólio Pessoal</strong>
+            <p class="muted"><a href="https://meuportfolio.com">meuportfolio.com</a></p>
+          </div>
+          <div style="padding:10px; border-radius:8px; border:1px solid rgba(15,23,42,0.04)">
+            <strong>Projeto React</strong>
+            <p class="muted">Aplicação SPA com autenticação e consumo de API REST</p>
+          </div>
+        </div>
+      </section>
+
+      <footer style="margin-top:22px; border-top:1px dashed rgba(15,23,42,0.04); padding-top:12px">
+        <div class="muted">Disponível para entrevistas — referências mediante solicitação.</div>
+      </footer>
+
+    </main>
+  </article>
+</body>
+</html>
