@@ -1,4 +1,4 @@
-# Conecta BH — Home-page Responsiva
+# Semana 05
 
 Projeto acadêmico desenvolvido para a disciplina **Desenvolvimento de Interfaces Web**.
 
