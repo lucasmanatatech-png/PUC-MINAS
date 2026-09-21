@@ -1,4 +1,4 @@
-# Conecta BH — Home-page Responsiva com Bootstrap
+# semana 06
 
 Projeto acadêmico desenvolvido para a disciplina **Desenvolvimento de Interfaces Web**.
 
@@ -6,12 +6,10 @@ Nesta versão, a home-page do projeto anterior foi **refatorada para Bootstrap**
 
 ## Autor
 
-- **Nome:** SEU NOME AQUI
+- **Nome:** Lucas Manata de Pinho
 - **Curso:** Ciência da Computação
 - **Instituição:** PUC Minas
 - **Disciplina:** Desenvolvimento de Interfaces Web
-
-> Antes de entregar, substitua **SEU NOME AQUI** pelo seu nome completo.
 
 ## Tecnologias utilizadas
 
@@ -133,70 +131,6 @@ prints/mobile.png
 
 ![Versão mobile](prints/mobile.png)
 
-## Como executar
 
-Abra o arquivo `index.html` no navegador.
 
-Também é possível utilizar a extensão **Live Server** do Visual Studio Code.
 
-## Sequência recomendada de commits
-
-### Etapa 1 — estrutura inicial
-
-```bash
-git add .
-git commit -m "Cria estrutura HTML inicial da home-page"
-```
-
-### Etapa 2 — versão responsiva com Bootstrap
-
-Depois de adicionar o Bootstrap e refatorar o layout:
-
-```bash
-git add .
-git commit -m "Cria versao responsiva com Bootstrap"
-```
-
-Crie a tag desta segunda versão:
-
-```bash
-git tag -a v2.0 -m "Responsividade Bootstrap"
-```
-
-> **Atenção:** o enunciado diz que a versão deve ser marcada como **v2.0**, mas o exemplo de comando mostra `v1.0`. Como esta atividade é a evolução da versão anterior, `v2.0` é a marcação coerente. Se o professor tiver determinado verbalmente que o comando deve ser copiado literalmente, confirme com ele antes de trocar a tag.
-
-### Etapa 3 — documentação
-
-Depois de inserir os prints e revisar o README:
-
-```bash
-git add .
-git commit -m "Finaliza documentacao do projeto"
-```
-
-## Envio para o GitHub
-
-```bash
-git push origin main --tags
-```
-
-Ao final, copie a URL do repositório do GitHub e envie na atividade do Canvas.
-
-## Checklist de entrega
-
-- [ ] Aceitei a atividade no GitHub Classroom;
-- [ ] Copiei a estrutura do projeto anterior;
-- [ ] Fiz o commit da estrutura inicial;
-- [ ] Adicionei Bootstrap via CDN;
-- [ ] Retirei do CSS a responsividade manual baseada em `@media`;
-- [ ] Utilizei o Grid responsivo do Bootstrap;
-- [ ] Testei o menu no celular;
-- [ ] Testei as colunas no desktop e no celular;
-- [ ] Salvei o print desktop em `prints/desktop.png`;
-- [ ] Salvei o print mobile em `prints/mobile.png`;
-- [ ] Preenchi meu nome no README;
-- [ ] Fiz o commit da versão Bootstrap;
-- [ ] Criei a tag solicitada;
-- [ ] Fiz o commit final da documentação;
-- [ ] Executei `git push origin main --tags`;
-- [ ] Enviei a URL do repositório no Canvas.
