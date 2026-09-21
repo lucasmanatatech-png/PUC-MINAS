@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Home-page responsiva do projeto Conecta BH.">
+    <title>Conecta BH</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="container cabecalho-conteudo">
+            <a class="logo" href="#inicio" aria-label="Página inicial Conecta BH">
+                Conecta<span>BH</span>
+            </a>
+
+            <nav class="navegacao" aria-label="Navegação principal">
+                <a href="#inicio">Início</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#destaques">Destaques</a>
+                <a href="#contato">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="inicio">
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-texto">
+                    <p class="etiqueta">DESCUBRA • CONECTE-SE • VIVA</p>
+                    <h1>Informação, cultura e experiências em um só lugar.</h1>
+                    <p>
+                        O Conecta BH é um projeto criado para reunir conteúdos sobre
+                        lazer, gastronomia, cultura e lugares interessantes de Belo Horizonte.
+                        A proposta é facilitar a descoberta de novas experiências na cidade.
+                    </p>
+                    <a class="botao" href="#destaques">Conhecer destaques</a>
+                </div>
+
+                <div class="hero-imagem">
+                    <img src="img/banner.svg" alt="Ilustração urbana representando Belo Horizonte">
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre" class="sobre">
+            <div class="container duas-colunas">
+                <div>
+                    <p class="etiqueta">SOBRE O PROJETO</p>
+                    <h2>Uma home-page pensada para diferentes dispositivos</h2>
+                </div>
+
+                <div>
+                    <p>
+                        Este site foi desenvolvido com HTML5 e CSS3, utilizando recursos
+                        como Flexbox, CSS Grid e Media Queries. No desktop, o conteúdo é
+                        distribuído em múltiplas colunas; em telas menores, os elementos
+                        passam a ocupar uma única coluna para melhorar a leitura e a navegação.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="destaques" class="destaques">
+            <div class="container">
+                <div class="secao-titulo">
+                    <p class="etiqueta">DESTAQUES</p>
+                    <h2>Explore a cidade</h2>
+                    <p>Algumas categorias que fazem parte do conteúdo do Conecta BH.</p>
+                </div>
+
+                <div class="cards">
+                    <article class="card">
+                        <img src="img/cultura.svg" alt="Ilustração representando cultura e arte">
+                        <div class="card-conteudo">
+                            <h3>Cultura</h3>
+                            <p>
+                                Museus, exposições, música, teatro e eventos para aproveitar
+                                a programação cultural da cidade.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <img src="img/gastronomia.svg" alt="Ilustração representando gastronomia">
+                        <div class="card-conteudo">
+                            <h3>Gastronomia</h3>
+                            <p>
+                                Descubra cafés, restaurantes, mercados e experiências
+                                gastronômicas para diferentes estilos e momentos.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <img src="img/lazer.svg" alt="Ilustração representando lazer ao ar livre">
+                        <div class="card-conteudo">
+                            <h3>Lazer</h3>
+                            <p>
+                                Parques, passeios, atividades ao ar livre e sugestões
+                                para aproveitar melhor o tempo livre.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contato" class="rodape">
+        <div class="container rodape-conteudo">
+            <div>
+                <a class="logo logo-rodape" href="#inicio">Conecta<span>BH</span></a>
+                <p>Projeto acadêmico de Desenvolvimento de Interfaces Web.</p>
+            </div>
+
+            <div class="redes">
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
+                <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </div>
+        </div>
+
+        <p class="copyright">
+            © 2026 Conecta BH. Desenvolvido para fins acadêmicos.
+        </p>
+    </footer>
+</body>
+</html>

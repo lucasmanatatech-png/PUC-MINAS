@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Cultura">
+<rect width="800" height="500" fill="#f0f9ff"/>
+<circle cx="650" cy="105" r="105" fill="#0284c7" opacity=".18"/>
+<circle cx="145" cy="370" r="125" fill="#0284c7" opacity=".12"/>
+<text x="70" y="205" font-family="Arial, sans-serif" font-size="105">🎭</text>
+<text x="70" y="320" font-family="Arial, sans-serif" font-size="52" font-weight="700" fill="#0f172a">Cultura</text>
+<text x="72" y="365" font-family="Arial, sans-serif" font-size="25" fill="#475569">arte, memória e identidade</text>
+<rect x="70" y="400" width="170" height="12" rx="6" fill="#0284c7"/>
+</svg>

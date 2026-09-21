@@ -1,0 +1,60 @@
+/* =========================================================
+   CONECTA BH - V2.0
+   Bootstrap é responsável pelo layout e responsividade.
+   Este arquivo mantém somente identidade visual e detalhes.
+========================================================= */
+
+:root {
+    --cor-primaria: #0284c7;
+    --cor-escura: #0f172a;
+    --cor-texto: #475569;
+    --cor-fundo-suave: #eef6fb;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f7f8fb;
+    color: #1e293b;
+}
+
+.hero {
+    background:
+        radial-gradient(circle at top left, rgba(56, 189, 248, 0.14), transparent 35%),
+        #ffffff;
+}
+
+.sobre {
+    background: var(--cor-fundo-suave);
+}
+
+.tracking-wide {
+    letter-spacing: 0.14em;
+}
+
+.secao-titulo {
+    max-width: 680px;
+}
+
+.card {
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 1rem 2.5rem rgba(15, 23, 42, 0.12) !important;
+}
+
+.card-img-top {
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+}
+
+a {
+    transition: color 0.2s ease;
+}
