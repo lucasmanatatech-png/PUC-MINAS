@@ -6,7 +6,7 @@ A proposta desta atividade foi evoluir a home-page criada anteriormente, aplican
 
 ## Autor
 
-- **Nome:** SEU NOME AQUI
+- **Nome:** Lucas Manata
 - **Curso:** Ciência da Computação
 - **Instituição:** PUC Minas
 - **Disciplina:** Desenvolvimento de Interfaces Web
@@ -71,25 +71,6 @@ Basta abrir o arquivo `home.html` no navegador.
 
 Também é possível utilizar a extensão **Live Server** do Visual Studio Code.
 
-## Histórico sugerido de commits
-
-```bash
-git add .
-git commit -m "Cria estrutura HTML inicial da home-page"
-
-git add .
-git commit -m "Aplica estilos basicos do CSS"
-
-git add .
-git commit -m "Cria versao responsiva com CSS puro"
-
-git tag -a v1.0 -m "Responsividade CSS puro"
-
-git add .
-git commit -m "Finaliza documentacao do projeto"
-
-git push origin main --tags
-```
 
 ## Observação
 
