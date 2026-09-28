@@ -37,6 +37,9 @@ function perguntarNumero(mensagem) {
 
 /* ---------- 1) Dados iniciais (tipos básicos) ---------- */
 
+// este log aparece assim que a página abre, antes das perguntas
+console.log("Script carregado. Responda as perguntas que vão aparecer na tela.");
+
 // string
 const nome = prompt("Qual é o seu nome?");
 
