@@ -1,13 +1,8 @@
-# Simulador de Orçamento Pessoal — JavaScript básico
+# Simulador de Orçamento Pessoal
 
-Atividade prática da disciplina **Desenvolvimento de Interfaces Web** da **PUC Minas**, referente à **semana 07**.
+Atividade da semana 07 de Desenvolvimento de Interfaces Web, da PUC Minas.
 
-O exercício introduz os primeiros passos em JavaScript no navegador, praticando
-criação de variáveis, tipos básicos (`string`, `number`, `boolean`), operadores,
-fluxos de controle condicionais (`if` / `else`) e estruturas de repetição (`for` e `while`).
-
-A aplicação é um mini-simulador de orçamento pessoal: o usuário informa o nome, a
-renda mensal e some despesas, e o script classifica o resultado do orçamento.
+É o primeiro contato com JavaScript no navegador, então o script é bem direto: pergunta alguns dados com `prompt()`, valida os números, soma as despesas e no fim diz se o orçamento fechou no azul ou no vermelho.
 
 ## Autor
 
@@ -17,15 +12,14 @@ renda mensal e some despesas, e o script classifica o resultado do orçamento.
 - **Instituição:** PUC Minas
 - **Disciplina:** Desenvolvimento de Interfaces Web
 
-## Tecnologias utilizadas
+## Tecnologias
 
 - HTML5
-- JavaScript (ES5+, sem frameworks)
-- DevTools / Console do navegador
-- Git
-- GitHub
+- JavaScript
+- Console do navegador (F12)
+- Git e GitHub
 
-## Estrutura de arquivos
+## Estrutura
 
 ```text
 semana07/
@@ -36,71 +30,42 @@ semana07/
     └── console.png
 ```
 
-## Como executar
+## Como rodar
 
-A atividade foi feita para rodar direto no navegador, sem servidor.
+Não precisa de servidor nem instalar nada. Abre o `index.html` no navegador, aperta F12 para abrir o console e recarrega a página.
 
-1. Abra a pasta `semana07` no Visual Studio Code;
-2. Abra o arquivo `index.html` no navegador;
-3. Abra o **Console do navegador com `F12`**;
-4. Recarregue a página — o script roda sozinho e as perguntas aparecem na tela.
+As perguntas vão aparecendo uma a uma na tela. No fim o resultado sai num `alert()` e também no console.
 
-As respostas são digitadas nas janelas de `prompt()`. Ao final, o resultado é
-mostrado em um `alert()` e também no console.
+## O que tem no script
 
-## Como o script foi feito
+O `script.js` está dividido em cinco partes, na mesma ordem do enunciado.
 
-### 1) Dados iniciais
+A primeira parte pede o nome, a renda e quantas despesas serão informadas. A quantidade fica travada entre 1 e 5: se vier menos que 1, vira 1, e se vier mais que 5, vira 5.
 
-- O **nome** é lido como `string` com `prompt()`;
-- A **renda mensal** e a **quantidade de despesas** são lidas como `number` e
-  passadas pela validação com `while`;
-- A quantidade de despesas é limitada entre 1 e 5: se for menor que 1 vira 1, e
-  se for maior que 5 vira 5.
-
-### 2) Validação com `while`
-
-A função `perguntarNumero()` usa `Number(...)` e `isNaN(...)`. Enquanto o valor
-digitado não for um número, o `while` repete a pergunta. Isso evita que um texto
-como `"abc"` entre no cálculo e produza `NaN`.
+A validação dos números ficou numa função separada, a `perguntarNumero()`. Ela converte o que foi digitado com `Number()` e, enquanto o `isNaN()` der true, repete a pergunta. Sem isso, digitar "abc" na renda quebraria a conta inteira com `NaN`.
 
 ```js
-let valor = Number(prompt(mensagem));
+function perguntarNumero(mensagem) {
+    let valor = Number(prompt(mensagem));
 
-while (isNaN(valor)) {
-    console.warn("Entrada inválida (" + valor + "). Digite um número.");
-    valor = Number(prompt("Valor inválido! Digite um número. " + mensagem));
+    while (isNaN(valor)) {
+        console.warn("Entrada inválida (" + valor + "). Digite um número.");
+        valor = Number(prompt("Valor inválido! Digite um número. " + mensagem));
+    }
+
+    return valor;
 }
 ```
 
-### 3) Lançamento das despesas com `for`
+As despesas entram num `for`, uma de cada vez, somando no total com `+=`. São "Despesa 1", "Despesa 2", e assim por diante.
 
-Um `for` pergunta o valor de cada despesa ("Despesa 1", "Despesa 2", ...) e
-acumula o total com o operador `+=`.
+A análise vem num `if / else`. A sobra é `renda - total`, e a comparação `total > renda` fica num boolean chamado `gastouMais`. Quando gastou mais, o script avisa que passou da renda. Quando não passou, ele olha se a sobra chegou a 30% da renda: se chegou, a margem é ótima, se não, ainda dá pra melhorar a sobra.
 
-### 4) Análise com `if` / `else`
+No fim os números saem com duas casas decimais pelo `toFixed(2)`, e o resultado aparece de duas formas, num `alert()` e no `console.log()`.
 
-A sobra é calculada com `renda - totalDespesas`, e a comparação
-`totalDespesas > renda` é guardada em uma variável **boolean** chamada `gastouMais`.
+## Print
 
-| Situação | Mensagem |
-| --- | --- |
-| `despesas > renda` | ⚠️ Atenção: você gastou mais do que ganhou. |
-| `sobra >= 30%` da renda | ✅ Ótimo: boa margem de sobra. |
-| caso contrário | 🙂 Ok: dá para melhorar a sobra. |
-
-### 5) Saída final
-
-O resultado mostra nome, renda, total de despesas e sobra, todos com duas casas
-decimais (`toFixed(2)`), e é exibido de duas formas:
-
-- em um `alert()`;
-- no console, com `console.log()`, em um texto organizado e delimitado por
-  linhas de tracejado.
-
-## Print da execução
-
-Print do Console do navegador com o resultado do `console.log`:
+Print do console com o resultado do programa:
 
 ![Console do navegador com a execução do script](prints/console.png)
 
@@ -110,6 +75,5 @@ Print do Console do navegador com o resultado do `console.log`:
 git checkout -b lucas
 git add .
 git commit -m "Atividade Prática - JavaScript básico - matrícula: 910815"
-git push origin main
 git push origin lucas
 ```
